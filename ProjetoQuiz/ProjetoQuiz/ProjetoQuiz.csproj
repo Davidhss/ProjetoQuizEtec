@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83B09464-2276-4E54-821B-F8C467BC8C13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjetoQuiz</RootNamespace>
+    <AssemblyName>ProjetoQuiz</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dados.cs" />
+    <Compile Include="frmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuiz.Designer.cs">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultado.Designer.cs">
+      <DependentUpon>frmResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTemas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTemas.Designer.cs">
+      <DependentUpon>frmTemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoad.Designer.cs">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUniversitarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUniversitarios.Designer.cs">
+      <DependentUpon>frmUniversitarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pergunta1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pergunta1.Designer.cs">
+      <DependentUpon>Pergunta1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pergunta10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pergunta10.Designer.cs">
+      <DependentUpon>Pergunta10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pergunta2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pergunta2.Designer.cs">
+      <DependentUpon>Pergunta2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pergunta3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pergunta3.Designer.cs">
+      <DependentUpon>Pergunta3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pergunta4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pergunta4.Designer.cs">
+      <DependentUpon>Pergunta4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pergunta5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pergunta5.Designer.cs">
+      <DependentUpon>Pergunta5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pergunta6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pergunta6.Designer.cs">
+      <DependentUpon>Pergunta6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pergunta7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pergunta7.Designer.cs">
+      <DependentUpon>Pergunta7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pergunta8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pergunta8.Designer.cs">
+      <DependentUpon>Pergunta8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pergunta9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pergunta9.Designer.cs">
+      <DependentUpon>Pergunta9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmQuiz.resx">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultado.resx">
+      <DependentUpon>frmResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoad.resx">
+      <DependentUpon>frmLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTemas.resx">
+      <DependentUpon>frmTemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUniversitarios.resx">
+      <DependentUpon>frmUniversitarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pergunta1.resx">
+      <DependentUpon>Pergunta1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pergunta10.resx">
+      <DependentUpon>Pergunta10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pergunta2.resx">
+      <DependentUpon>Pergunta2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pergunta3.resx">
+      <DependentUpon>Pergunta3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pergunta4.resx">
+      <DependentUpon>Pergunta4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pergunta5.resx">
+      <DependentUpon>Pergunta5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pergunta6.resx">
+      <DependentUpon>Pergunta6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pergunta7.resx">
+      <DependentUpon>Pergunta7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pergunta8.resx">
+      <DependentUpon>Pergunta8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pergunta9.resx">
+      <DependentUpon>Pergunta9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Universitarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
